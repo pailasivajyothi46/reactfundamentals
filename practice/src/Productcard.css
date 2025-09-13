@@ -1,0 +1,29 @@
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+
+
+}
+.container{
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: black;
+    text-align: center;
+    padding: 15px;
+}
+.gecol{
+    font-size: 20px;
+    font-weight: lighter;
+    color:green;
+}
+.recol{
+    font-size: 25px;
+    font-weight: lighter;
+    color:red;
+}

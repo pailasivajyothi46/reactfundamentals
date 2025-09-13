@@ -1,12 +1,18 @@
-function Productcard({pname,pprice,pavailable}){
-   
-    return(
-        <div>
-            <p>product name:{pname}</p>
-            <p>price :{pprice}</p>
-            <p>{pavailable===true?" in stock":"out of stock"}</p>
+import "./Productcard.css"
+function Productcard(product) {
+    const stylevariable = {
+        fontSize: "20px",
+        fontWeight: "bold",
+        color: "black"
+    }
+
+    return (
+        <div className="container">
+            <p style={stylevariable}>product name:{product.pname}</p>
+            <p className="price">price :{product.pprice}</p>
+            {product.pavailable === true ? <p className="gecol">in stock</p> : <p className="recol">out of stock</p>}
         </div>
-    
+
     )
 }
 export default Productcard;
